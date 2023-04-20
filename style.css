@@ -1,0 +1,100 @@
+h1{
+    text-align: center;
+    color: rgb(235, 139, 15);
+    font-size: 50px;
+    text-shadow: 2px 2px rgb(97, 56, 9);
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.container img {
+     transform: scale(1);
+     transition: transform 5s;
+}
+.container img:hover{
+    transform: scale(1.5);
+    width: 300px;
+}
+.container img {
+    border-radius:20px;
+}
+body{
+    background-image:url(https://img.wprost.pl/img/droga-mleczna-zdj-ilustracyjne/bc/87/1a43c9a724eabfeef440b2e0e613.jpeg);
+}
+.keyframes{
+    background-color: rgb(157, 159, 247);
+    position: relative;
+    animation: mymove 22s infinite;
+    display: flex;
+    justify-content: center;
+    top: 20px;
+    font-size:20px ;
+}
+@keyframes mymove {
+    0% { top:0px;left:-1000px}
+    100% {top:0px; left: 1400px;}
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cube{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg);
+    animation: alternate 4s linear infinite;
+}
+@keyframes onlmate{
+    0%
+    {
+        transform: rotateX(-10deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.cube div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+}
+.cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#151515,#00ec00);
+    transform: rotateY(calc(90deg* var(--1))) translateZ();
+    
+}
+.table{
+    display: flex;
+}
+.table1{
+    border: 2px;
+    background-color: rgb(27, 137, 137);
+    color: rgb(242, 244, 245);
+    width: 30px;
+    border-radius: 5px;
+    text-align: center;
+    border: dashed black;
+    
+}
+.table2{
+    border: 2px;
+    background-color: rgb(27,137,137);
+    color:rgb(242, 244, 245);
+    width:30px ;
+    border-radius :5px;
+    text-align: center;
+    border:  dashed black;
+}
